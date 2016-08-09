@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'done', to: 'products#done'
   get 'index', to: 'products#index'
   resources :contacts
+  get 'faqs', to: 'pages#faqs'
   get '/about' => 'pages#about'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
