@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post 'checkout', to: 'products#checkout'
   post 'order', to: 'products#order'
   get 'done', to: 'products#done'
-  
+  get 'index', to: 'products#index'
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'
