@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  
+  resources :products, only: [:show]
+  
+  post 'quote', to: 'products#quote'
+  get 'checkout', to: 'products#checkout'
+  post 'order', to: 'products#order'
+  get 'done', to: 'products#done'
+  get 'index', to: 'products#index'
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'

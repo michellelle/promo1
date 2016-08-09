@@ -2,3 +2,28 @@
   margin-bottom: 0;
   border-radius: 0;
 }
+
+.nav {
+    font-size: 15px;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+.collapse {
+    background-color: #000;
+    color: #000;
+}
+.open .dropdown-toggle {
+    color: #000;
+    background-color: #555;
+}
+
+.dropdown-menu li:hover {
+    background-color: #b8b894;
+    color: #000;
+}
