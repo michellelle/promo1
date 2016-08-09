@@ -11,7 +11,7 @@ end
 # Stripe for checkout
 gem 'stripe'
 # Use devise for users profiles
-gem 'devise', '4.1.1'
+gem 'devise', '~> 4.1.1'
 # Use font awesome library for icons
 gem 'font-awesome-sass', '~> 4.6.2'
 # Use bootstrap library for styles 
