@@ -1,0 +1,19 @@
+<div class="flex one two-1000">
+    <div class="product-image">
+        <img src="<%= @product.picture %>" />
+    </div>
+  <div>
+      <h1><%= @product.title %></h1>
+    <p>
+        <%= @product.description %>
+    </p>
+    
+    <h2><%= number_to_currency(@product.price) %></h2>
+    <hr/>
+    
+    <h3>Instant Shipping</h3>
+    <img src="https://s31.postimg.org/cjyo11eqj/uber_rush.png" class="logo"/>
+        <small>UberRUSH is an on-demand delivery network powered by Uber. Once your order is picked up, you’ll receive a text message with a link to track your delivery in real time on the map. So you always know exactly when it will arrive. </small> </p>
+    </p>
+
+    <%= link_to "Cart", checkout_path, class: "btn btn-default" %>

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :products, only: [:show]
   
   post 'quote', to: 'products#quote'
-  post 'checkout', to: 'products#checkout'
+  get 'checkout', to: 'products#checkout'
   post 'order', to: 'products#order'
   get 'done', to: 'products#done'
   get 'index', to: 'products#index'
