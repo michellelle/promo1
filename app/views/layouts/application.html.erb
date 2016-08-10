@@ -47,7 +47,7 @@
           <li><%= link_to "Community", users_path %></li>
           <li><%= link_to "My Account", edit_user_registration_path %></li>
           <li><%= link_to "Edit Your Profile", edit_user_profile_path(current_user) %></li>
-          <li><%= link_to "View Your Profile", user_path(current_user) %></li>
+          <li><%= link_to "View your Profile", user_path(current_user) %></li>
           <% else %>
           <%= link_to "Create your Profile", new_user_profile_path(current_user) if current_user %>
           <% end %>
@@ -70,6 +70,9 @@
 
 <footer>
   <div class="container text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
   <h1><%= link_to "Contact Us", new_contact_path %></h1>
     <div class="btn-group">
       <!--Facebook-->

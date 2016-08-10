@@ -1,14 +1,6 @@
-.carousel-inner img {
-  width: 100%; /* Set width to 100% */
-  margin: auto;
-  min-height:200px;
-}
-
 /* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
 .carousel-caption {
   display: none;
-    }
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -22,4 +14,16 @@
 
 .carousel-indicators li.active {
     background-color: #008080;
+}
+
+.carousel-inner img {
+    -webkit-filter: grayscale(30%);
+    filter: grayscale(30%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    max-height: 600px;
+}
+
+.carousel-caption h1 {
+    color: #fff;
 }
