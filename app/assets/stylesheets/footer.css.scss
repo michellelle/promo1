@@ -1,10 +1,17 @@
-.footer {
-    background-color: #fff;
-    padding: 25px;
-}
-
 .btn-default {
     background-color: #000;
     color: #fff;
     border-radius: 0px;
+}
+
+// Footer *
+
+.bg-4 {
+  background-color: #2f2f2f; /* Black Gray */
+}
+
+.container-footer, a.up-arrow {
+    color: #fff;
+    border-radius: 0px;
+    padding: 40px;
 }

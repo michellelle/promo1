@@ -1,11 +1,25 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.body {
+    padding-top: 40px;
+}
 .row {
     padding-top: 50px;
 }
 
 .p {
     size: 30px;
+}
+
+// Home page Modal including map
+// *Map size adjustments*
+
+.modal-body {
+    size: 100%;
+}
+
+.bg-5 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
 }
