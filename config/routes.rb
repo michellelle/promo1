@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :products, only: [:show]
+  resources :users do
+    resource :profile
+  end
   
   post 'quote', to: 'products#quote'
   get 'checkout', to: 'products#checkout'
