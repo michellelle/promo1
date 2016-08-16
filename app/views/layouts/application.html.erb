@@ -36,17 +36,12 @@
     <!-- /.sign up / login -->
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-check"></span> Login<span class="caret"></a>
         <ul class="dropdown-menu" role="menu">
-          <% if user_signed_in? %>
+          <% if current_user %>
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
           <% else %>
-            <li><%= link_to "Sign Up", new_user_registration_path(plan: @basic_plan.id), method: :get %></li>
-            <li><%= link_to "Sign In", new_user_session_path, method: :get %></li>
+            <li><%= link_to "Sign Up", new_user_registration_path(plan: @basic_plan) %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
           <% end %>
-          <li><%= link_to "Community", users_path %></li>
-          <li><%= link_to "My Account", edit_user_registration_path %></li>
-          <li><%= link_to "Edit Your Profile", edit_user_profile_path(current_user) %></li>
-          <li><%= link_to "View your Profile", user_path(current_user) %></li>
-          <li><%= link_to "Create your Profile", new_user_profile_path(current_user) if current_user %></li>
           
           <li role="separator" class="divider"></li>
           <li><%= link_to "FAQ's", faqs_path, method: :get %></li>
