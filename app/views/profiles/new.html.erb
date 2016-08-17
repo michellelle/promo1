@@ -3,7 +3,7 @@
         <h1 class="text-center">Create Your Profile</h1>
         <p class="text-center">Update your personal info...</p>
         <div class="well">
-            <%= form_for @profile, url: user_profile_path do |f| %>
+            <%= form_for @profile, url: user_profile_path(current_user) do |f| %>
                 <div class="form-group">
                     <%= f.label :first_name %>
                     <%= f.text_field :first_name, class: 'form-control' %>
