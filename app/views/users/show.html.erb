@@ -1,24 +1,30 @@
-<div class="container-fluid text-center">
-  <h3 class="margin">ASM - Impex</h3>
-  <p>World-Class Industry specializing in electronics, clothing, materials, imported textiles, and much more...</p>
-    <img src="http://41.media.tumblr.com/0515719099389a401818068d800450ed/tumblr_inline_nt08nbCAz81rjic88_1280.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+<div class="jumbotron bg-2">
+    <div class="container-fluid text-center">
+      <h2 class="margin">ASM - Impex</h2>
+      <p>World-Class Industry specializing in electronics, clothing, materials, imported textiles, and much more...</p>
+        <img src="http://41.media.tumblr.com/0515719099389a401818068d800450ed/tumblr_inline_nt08nbCAz81rjic88_1280.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+        <h3>About Me<br><i class="fa fa-bars" aria-hidden="true"></i></h3>
+    </div>
 </div>
 
 <div class="col-md-6 col-md-offset-3">
   <h1 class="margin text-center"><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1><br>
   <div class="row">
     <div class="col-md-3 text-center">
-    
+
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-4">
+  <div class="row bg-3">
+    <div class="col-md-4 text-center">
+        <h3>My Bio</h3>
       <%= @user.profile.description %>
     </div>
-    <div class="col-md-4">
-      <span class="job-title-icon"><%= job_title_icon %></span><%= @user.profile.job_title %>
+    <div class="col-md-4 text-center">
+        <h3>Title</h3>
+      <span class="job-title-icon"><%= @user.profile.job_title %>
     </div>  
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
+        <h3>Email</h3>
       <%= @user.profile.contact_email %>
     </div>
   </div>

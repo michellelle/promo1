@@ -21,7 +21,19 @@
     size: 100%;
 }
 
-.bg-5 {
+.bg-5, .bg-2 {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
+    padding: 40px, 40px, 40px, 40px;
+}
+
+.bg-3 {
+    background-color: #62eace;
+    color: #ffffff;
+    padding: 40px, 40px, 40px, 40px;
+    padding-bottom: 40px;
+}
+
+.fa {
+    size: 50px;
 }
