@@ -5,11 +5,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         super do |resource|
             if params[:plan]
                 resource.plan_id = params[:plan]
-                if resource.plan_id == 3
-                    resource.save_with_payment
-                else
-                    resource.save
-                end
+                resource.save
             end
         end
     end

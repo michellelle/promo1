@@ -38,6 +38,8 @@
         <ul class="dropdown-menu" role="menu">
           <% if current_user %>
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "Create your Profile", new_user_profile_path(current_user) if current_user %></li>
+            <li><%= link_to  "View Your Profile", user_path(current_user) %></li>
           <% else %>
             <li><%= link_to "Sign Up", new_user_registration_path(plan: @basic_plan) %></li>
             <li><%= link_to "Sign In", new_user_session_path %></li>
