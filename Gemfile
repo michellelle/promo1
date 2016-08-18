@@ -7,7 +7,7 @@ group :production do
 end
 
 
-
+gem 'paperclip', '~> 4.2.1'
 # Stripe for checkout
 gem 'stripe'
 # Use devise for users profiles
