@@ -3,18 +3,18 @@
         <ul class="list-unstyled">
             <% @users.each do |user| %>
                 <% if user.profile %>
-                 <li>
-                    <div class="well row <%= cycle('bg-3', '') %>">
-                        <div class="col-sm-4 text-center">
-            
-                        <div>
-                            <%= link_to user do %>    
-                                <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
-                            <% end %>
-                            <p><%= user.profile.job_title %></p>
+                    <li>
+                        <div class="well row <%= cycle('bg-3', '') %>">
+                            <div class="col-sm-4 text-center">
+                
+                            <div>
+                                <%= link_to user do %>    
+                                    <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
+                                <% end %>
+                                <p><%= user.profile.job_title %></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
                 <% end %>
             <% end %>
         </ul>
