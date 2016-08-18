@@ -11,7 +11,7 @@
   <h1 class="margin text-center"><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1><br>
   <div class="row">
     <div class="col-md-3 text-center">
-      <%= image_tag @user.profile.avatar.url, class: 'user-show-avatar' %>
+      
     </div>
   </div>
   <div class="row bg-3">
@@ -21,7 +21,7 @@
     </div>
     <div class="col-md-4 text-center">
         <h3>Title</h3>
-      <span class="job-title-icon"><%= @user.profile.job_title %>
+      <span class="job-title-icon"><%= job_title_icon %></span><%= @user.profile.job_title %>
     </div>  
     <div class="col-md-4 text-center">
         <h3>Email</h3>
